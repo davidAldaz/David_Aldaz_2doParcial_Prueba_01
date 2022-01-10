@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name="com.nadershamma.apps.registro.DIAS_Registro"
+            android:exported="false" />
+        <activity
             android:name=".DIAS_LoginActivity"
             android:exported="false" />
         <activity

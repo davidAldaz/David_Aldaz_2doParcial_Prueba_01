@@ -17,4 +17,13 @@
     <string name="image_description">Image of the current flag in the quiz</string>
     <string name="default_region">Europe</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="txt_login">Ingreso al juego</string>
+    <string name="txt_usuario">Usuario</string>
+    <string name="txt_passwd">Contraseña</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="btn_registro">Registrarse</string>
+    <string name="txt_registro_nuevo">Nuevo usuario</string>
+    <string name="txt_nuevo_usuario">Nombre de usuario</string>
+    <string name="txt_nuevo_passwd">Contraseña</string>
+    <string name="btn_nuevo_usuario">Guardar</string>
 </resources>
