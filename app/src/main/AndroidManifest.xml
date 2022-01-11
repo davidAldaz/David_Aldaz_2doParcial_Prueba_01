@@ -13,10 +13,10 @@
             android:name="com.nadershamma.apps.registro.DIAS_Registro"
             android:exported="false" />
         <activity
-            android:name=".DIAS_LoginActivity"
+            android:name=".DIAS_MainActivity"
             android:exported="false" />
         <activity
-            android:name=".DIAS_MainActivity"
+            android:name=".DIAS_LoginActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar">
