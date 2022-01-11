@@ -26,7 +26,7 @@ public class DIAS_LoginActivity extends AppCompatActivity {
         et2= findViewById(R.id.edtclave);
     }
 
-    //metodo de ingreso
+    //metodo de ingreso pantalla login
     public void InicioSesion(View v){
         DIAS_DBHelper admin = new DIAS_DBHelper(this,"usuarios",null,1);
 
@@ -59,12 +59,12 @@ public class DIAS_LoginActivity extends AppCompatActivity {
                 Toast.makeText(this,"Datos incorrectos",Toast.LENGTH_LONG).show();
             }
 
-        } catch (Exception e) {//capturamos los errores que hubieran
+        } catch (Exception e) {//capturamos los errores que hubieran generado
             Toast.makeText(this,"Error" + e.getMessage(),Toast.LENGTH_LONG).show();
         }
     }
 
-    //metodo que nos envia a la ventana registro
+    //metodo que nos envia a la ventana registro de nuevo usuario
     public void RegistroData(View v){
 
         Intent rdata=new Intent(this, DIAS_Registro.class);
