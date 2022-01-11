@@ -16,10 +16,7 @@
             android:name=".DIAS_MainActivity"
             android:exported="false" />
         <activity
-            android:name=".DIAS_LoginActivity"
-            android:label="@string/app_name"
-            android:launchMode="singleTop"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".DIAS_LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
