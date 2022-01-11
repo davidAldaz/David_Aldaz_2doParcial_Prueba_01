@@ -11,12 +11,14 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="com.nadershamma.apps.registro.DIAS_Registro"
-            android:exported="false" />
+            android:exported="true"/>
         <activity
             android:name=".DIAS_MainActivity"
-            android:exported="false" />
+            android:exported="true"/>
         <activity
-            android:name=".DIAS_LoginActivity">
+            android:name=".DIAS_LoginActivity"
+            android:exported="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -16,18 +16,11 @@ public class DIAS_LoginActivity extends AppCompatActivity {
 
     EditText et1,et2;
     private Cursor fila;
-    String Title = "Inicio de Sesión";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        this.setTitle(Title);
-
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-
-        getSupportActionBar().setIcon(R.drawable.ic_action_name);
 
         et1= findViewById(R.id.etusuario);
         et2= findViewById(R.id.edtclave);
@@ -35,9 +28,9 @@ public class DIAS_LoginActivity extends AppCompatActivity {
 
     //metodo de ingreso
     public void InicioSesion(View v){
-        DIAS_DBHelper admin=new DIAS_DBHelper(this,"instituto",null,1);
+        DIAS_DBHelper admin = new DIAS_DBHelper(this,"usuarios",null,1);
 
-        SQLiteDatabase db=admin.getWritableDatabase();
+        SQLiteDatabase db = admin.getWritableDatabase();
 
         String usuario=et1.getText().toString();
         String contrasena=et2.getText().toString();
@@ -52,9 +45,9 @@ public class DIAS_LoginActivity extends AppCompatActivity {
                 String usua=fila.getString(0);
                 String pass=fila.getString(1);
 
-                if (usuario.equals(usua)&&contrasena.equals(pass)){
+                if (usuario.equals(usua) && contrasena.equals(pass)){
 
-                    Intent ven = new Intent(this, DIAS_MainActivity.class);
+                    Intent ven = new Intent(getApplicationContext(), DIAS_MainActivity.class);
 
                     startActivity(ven);
 
