@@ -59,7 +59,7 @@ public class DIAS_LoginActivity extends AppCompatActivity {
                 Toast.makeText(this,"Datos incorrectos",Toast.LENGTH_LONG).show();
             }
 
-        } catch (Exception e) {//capturamos los errores que ubieran
+        } catch (Exception e) {//capturamos los errores que hubieran
             Toast.makeText(this,"Error" + e.getMessage(),Toast.LENGTH_LONG).show();
         }
     }
